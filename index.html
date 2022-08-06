@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Identifier</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner:wght@400;600&family=Inspiration&family=Mali:wght@200&family=New+Tegomin&family=Water+Brush&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap" rel="stylesheet">
+
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank">https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <center>
+                <h1 class="btn btn-default heading">Identifier<img src="magnifying glass logo.png"></h1>
+                <hr><hr>
+
+                <p style="font-size: 40px; font-family: Amatic SC;">Model is trained to identify the following objects: </p>
+                <br>
+
+                <b class="name_of_the_objects">
+                    Bottle
+                    <hr>
+                    Pillow
+                    <hr>
+                    Pen
+                    <hr>
+                    Diary
+                    <hr>
+                    Book
+                    <hr>
+                    Ball
+                    <hr>
+                    Watch
+                    <hr>
+                </b>
+
+                <h3>Remember to exclude yourself when you're taking the image of the object you want to identify!</h3>
+
+                <label>Webcam View --</label>
+
+                <div id="camera"></div>
+                <br><br>
+
+                <div id="result"></div>
+                <br><br>
+
+                <button onclick="take_snapshot()" id="capture_btn">Capture</button>
+                <br><br>
+
+                <button onclick="check();" id="check_btn">Identify</button>
+                <br><br>
+                
+                <p style="font-size: 22px;">Object: <span id="result_name"></span></p>
+                <br>
+                <p style="font-size: 22px;">Accuracy: <span id="result_accuracy"></span></p>
+                <hr><hr>
+
+            </center>
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>

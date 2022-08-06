@@ -1,0 +1,57 @@
+body
+{
+    color: black;
+    background: linear-gradient(#FFC300, #00AAFF, #0070FF, #1F9021);
+}
+
+.heading
+{
+    font-family: Water Brush;
+    font-size: 65px;
+}
+
+p
+{
+    font-family: Mali;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.name_of_the_objects
+{
+    font-family: Edu NSW ACT Foundation;
+    font-size: 25px;
+}
+
+#camera
+{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+
+h3
+{
+    font-family: Garamond;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button
+{
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: bold;
+    background-color: #FFC300;
+}
+
+img
+{
+    width: 175px;
+    height: 100px;
+}
+
+#result_name, #result_accuracy
+{
+    color: white;
+}
